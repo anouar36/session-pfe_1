@@ -164,8 +164,21 @@ class Camion extends Vehicule implements ReservableInterface  {
         $this->nom = $nom;
        
     }
-    public function setVehicules($nom){
-        $this->vehicules = $nom;
+    public function setVehicules($Voitures, $Motos,$Camions){
+        $this->vehicules = [
+            'Voitures'=>$Voitures,
+            'Motos'=>$Motos,
+            'Camions'=>$Camions,
+        ];
+       
+    }
+
+    public function setClient ($n,$a,$p){
+        $this->vehicules = [
+            'nom'=>$n,
+            'age'=>$a,
+            'price'=>$p,
+        ];
        
     }
   	
